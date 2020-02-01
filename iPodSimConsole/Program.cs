@@ -27,6 +27,11 @@ namespace iPodSimConsole
                 string title = "";
                 while (true)
                 {
+                    if (ita.CurrentTrack == null)
+                    {
+                        System.Threading.Thread.Sleep(500);
+                        continue;
+                    }
                     if (title != ita.CurrentTrack.Name)
                     {
                         title = ita.CurrentTrack.Name;
