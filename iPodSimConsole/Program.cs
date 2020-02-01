@@ -18,6 +18,10 @@ namespace iPodSimConsole
             try
             {
                 ita = new iTunesApp();
+                if (ita == null)
+                {
+                    return;
+                }
                 sp = new SerialPort("COM5", 9600);
                 sp.Open();
                 string title = "";
