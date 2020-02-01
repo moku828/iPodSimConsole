@@ -27,6 +27,7 @@ namespace iPodSimConsole
                 string title = "";
                 while (true)
                 {
+                    ita.Resume();
                     if (ita.CurrentTrack == null)
                     {
                         System.Threading.Thread.Sleep(500);
